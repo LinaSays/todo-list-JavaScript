@@ -1,0 +1,69 @@
+body {
+  background: #ec6f66; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec6f66, #f3a183); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec6f66, #f3a183); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#todo {
+    width: 600px;
+    margin: auto;
+}
+
+.add-todo {
+    background-color: #ec6f66;
+    border: 1px solid #f3a183;
+    border-radius: 5px;
+    color: #fff;
+    padding: 30px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow:inset 0 0 25px rgba(0,0,0,.1);
+}
+
+.add-todo:focus {
+    box-shadow: inset 0 0 25px rgba(221, 182, 7, 0.5);
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, .7);
+}
+
+.item-list {
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 20px;
+    width: 500px;
+    animation: fade .5s;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.item {
+    margin-right: 10px;
+}
+
+input:checked ~ label {
+    text-decoration: line-through;
+}
+
+.checked {
+    background-color: rgba(238, 238, 238, .6);
+    border: none;
+}
+
+#tache {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    width: 500px;
+}
